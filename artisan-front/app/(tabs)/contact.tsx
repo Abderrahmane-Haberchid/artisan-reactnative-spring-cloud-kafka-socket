@@ -17,7 +17,6 @@ const contact = () => {
           headerTitle: "YOYO",
         }}
       />
-      <Link href={"/submit"}>Submit now</Link>
     </View>
   )
 }

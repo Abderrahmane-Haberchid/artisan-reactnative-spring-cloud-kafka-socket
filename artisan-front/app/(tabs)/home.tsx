@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const submit = () => {
+const home = () => {
   return (
     <View>
-      <Text>submit</Text>
+      <Text>home</Text>
     </View>
   )
 }
 
-export default submit
+export default home
 
 const styles = StyleSheet.create({})
