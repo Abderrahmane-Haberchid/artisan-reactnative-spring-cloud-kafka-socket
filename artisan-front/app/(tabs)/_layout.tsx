@@ -1,18 +1,26 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Stack, Tabs } from 'expo-router'
+import { Tabs } from 'expo-router'
 import { FontAwesome } from '@expo/vector-icons'
 
 const _layout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+    <Tabs  screenOptions={{ 
+            tabBarActiveTintColor: '#3498db',
+            headerShown: false,
+            headerStatusBarHeight: 0,
+            tabBarStyle: {
+              paddingBottom: 0,  
+              paddingTop: 20
+            }
+          }}>
       
 
     <Tabs.Screen
         name='home'
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
         }}
       />
 
@@ -20,7 +28,7 @@ const _layout = () => {
         name='contact'
         options={{
           title: 'Contact',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="info" color={color} />
         }}
       />
 
@@ -28,9 +36,10 @@ const _layout = () => {
         name='profile'
         options={{
           title: 'Profile',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="avatar" color={color} />
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color} />
         }}
       />
+
     </Tabs>
   )
 }

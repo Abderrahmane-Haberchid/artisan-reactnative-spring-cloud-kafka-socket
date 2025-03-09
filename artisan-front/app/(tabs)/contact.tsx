@@ -5,18 +5,7 @@ import { Link, Stack } from 'expo-router'
 const contact = () => {
   return (
     <View>
-       <Stack.Screen
-        options={{
-          title: 'My home',
-          headerStyle: { backgroundColor: '#f4511e' },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-
-          headerTitle: "YOYO",
-        }}
-      />
+       <Text>Contact page</Text>
     </View>
   )
 }
